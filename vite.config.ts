@@ -29,6 +29,11 @@ export default defineConfig({
   },
   base: './',
   build: {
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'app.html')
+      }
+    },
     minify: 'terser',
     terserOptions: {
       compress: {

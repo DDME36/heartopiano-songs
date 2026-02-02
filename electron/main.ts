@@ -36,13 +36,13 @@ function createWindow() {
   }, 1000)
 
   if (process.env.VITE_DEV_SERVER_URL) {
-    mainWindow.loadURL(process.env.VITE_DEV_SERVER_URL)
+    mainWindow.loadURL(process.env.VITE_DEV_SERVER_URL + '/app.html')
     // Only open DevTools in development
     if (process.env.NODE_ENV === 'development') {
       mainWindow.webContents.openDevTools({ mode: 'detach' })
     }
   } else {
-    mainWindow.loadFile(path.join(__dirname, '../dist/index.html'))
+    mainWindow.loadFile(path.join(__dirname, '../dist/app.html'))
     // Disable DevTools in production
     mainWindow.webContents.on('before-input-event', (event, input) => {
       // Block F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C
