@@ -5,6 +5,9 @@ node_modules/
 dist/
 dist-electron/
 
+# Python embedded (too large for git)
+python-embed/
+
 # Environment files
 .env
 .env.local
@@ -23,9 +26,13 @@ Thumbs.db
 *.log
 npm-debug.log*
 
-# Local songs (not needed - use GitHub)
+# Local songs (use online instead)
 songs/
 
 # Temporary files
 *.tmp
 *.temp
+
+# Build artifacts
+*.exe
+*.zip

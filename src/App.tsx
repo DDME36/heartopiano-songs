@@ -99,8 +99,8 @@ function App() {
             localStorage.setItem('heartopiano_first_visit', 'true')
             setTimeout(() => {
               info(lang === 'en' 
-                ? '🎵 Welcome! Songs are automatically updated by the developer. Enjoy!' 
-                : '🎵 ยินดีต้อนรับ! เพลงจะอัพเดทอัตโนมัติจากผู้พัฒนา ขอให้สนุก!')
+                ? '🎵 Welcome! Songs are automatically updated. Enjoy!' 
+                : '🎵 ยินดีต้อนรับ! เพลงอัพเดทอัตโนมัติ ขอให้สนุก!')
             }, 1000)
           }
         } else {

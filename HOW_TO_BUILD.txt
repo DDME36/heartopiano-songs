@@ -1,0 +1,44 @@
+═══════════════════════════════════════
+  HEARTOPIANO - How to Build
+═══════════════════════════════════════
+
+วิธีที่ 1: ใช้ Script (แนะนำ)
+─────────────────────────────────────
+1. Double-click: BUILD.bat
+2. รอจนเสร็จ
+3. ไฟล์จะอยู่ที่: dist\Heartopiano-1.0.0-portable.exe
+
+หมายเหตุ: ถ้า error ให้รัน BUILD.bat เป็น Administrator
+
+
+วิธีที่ 2: Manual
+─────────────────────────────────────
+1. npm run electron:build
+2. ไฟล์จะอยู่ที่: dist\Heartopiano-1.0.0-portable.exe
+
+
+ถ้า Build ไม่ได้:
+─────────────────────────────────────
+Enable Developer Mode:
+1. Windows Settings
+2. Privacy & Security > For developers
+3. เปิด "Developer Mode"
+4. Restart เครื่อง
+5. รัน BUILD.bat อีกครั้ง
+
+
+หลัง Build เสร็จ:
+─────────────────────────────────────
+1. ไปที่: github.com/DDME36/heartopiano-songs/releases/new
+2. Tag: v1.0.0
+3. อัพโหลด: dist\Heartopiano-1.0.0-portable.exe
+4. Publish
+
+5. เปิด GitHub Pages:
+   Settings > Pages > main branch > Save
+
+6. เว็บจะอยู่ที่:
+   https://ddme36.github.io/heartopiano-songs/
+
+
+Created by PUNN

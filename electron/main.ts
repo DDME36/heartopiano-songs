@@ -122,13 +122,22 @@ function cleanExit() {
 }
 
 function startPythonParams() {
+  // Use embedded Python if available, otherwise use system Python
+  const embeddedPythonPath = path.join(process.resourcesPath, 'python-embed', 'python.exe')
+  const pythonCommand = fs.existsSync(embeddedPythonPath) ? embeddedPythonPath : 'python'
+  
   let scriptPath = path.join(__dirname, 'sender.py')
   if (!fs.existsSync(scriptPath)) {
     scriptPath = path.join(__dirname, '../electron/sender.py')
   }
+  if (!fs.existsSync(scriptPath)) {
+    scriptPath = path.join(process.resourcesPath, 'sender.py')
+  }
 
-  console.log(`Starting Python: ${scriptPath}`)
-  pythonProcess = spawn('python', ['-u', scriptPath])
+  console.log(`Starting Python: ${pythonCommand}`)
+  console.log(`Script path: ${scriptPath}`)
+  
+  pythonProcess = spawn(pythonCommand, ['-u', scriptPath])
 
   pythonProcess.stderr?.on('data', (data: Buffer) => {
     console.log(`[Python Error]: ${data.toString()}`)
