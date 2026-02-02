@@ -126,12 +126,12 @@ function startPythonParams() {
   const embeddedPythonPath = path.join(process.resourcesPath, 'python-embed', 'python.exe')
   const pythonCommand = fs.existsSync(embeddedPythonPath) ? embeddedPythonPath : 'python'
   
-  let scriptPath = path.join(__dirname, 'sender.py')
+  let scriptPath = path.join(process.resourcesPath, 'electron', 'sender.py')
   if (!fs.existsSync(scriptPath)) {
-    scriptPath = path.join(__dirname, '../electron/sender.py')
+    scriptPath = path.join(__dirname, 'sender.py')
   }
   if (!fs.existsSync(scriptPath)) {
-    scriptPath = path.join(process.resourcesPath, 'sender.py')
+    scriptPath = path.join(__dirname, '../electron/sender.py')
   }
 
   console.log(`Starting Python: ${pythonCommand}`)

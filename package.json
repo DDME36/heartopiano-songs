@@ -77,7 +77,7 @@
     "extraFiles": [
       {
         "from": "electron/sender.py",
-        "to": "electron/sender.py"
+        "to": "resources/electron/sender.py"
       }
     ]
   }
