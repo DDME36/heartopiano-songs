@@ -42,6 +42,7 @@ if not exist "python-embed\python.exe" (
 )
 
 echo [Step 2/5] Building app...
+cd /d "%~dp0"
 call npm run electron:build
 
 if errorlevel 1 (

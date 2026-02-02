@@ -1,0 +1,1312 @@
+{
+    "id": "alittle",
+    "title": "อย่างน้อย (A LITTLE)",
+    "artist": "BIGASS",
+    "bpm": 126,
+    "difficulty": "Hard",
+    "notes": [
+        //ห้อง 1
+        {
+            "key": "Db2,F2,Ab2",
+            "time": 0
+        },
+        {
+            "key": "Eb3",
+            "time": 0.5
+        },
+        {
+            "key": "Ab2",
+            "time": 1
+        },
+        {
+            "key": "Db3",
+            "time": 1.5
+        },
+        {
+            "key": "Eb3",
+            "time": 2.5
+        },
+        {
+            "key": "Ab2",
+            "time": 3
+        },
+        {
+            "key": "C3",
+            "time": 3.5
+        },
+        //ห้อง 2
+        {
+            "key": "F2,Ab2,C3",
+            "time": 4
+        },
+        {
+            "key": "Eb3",
+            "time": 4.5
+        },
+        {
+            "key": "Ab2",
+            "time": 5
+        },
+        {
+            "key": "F3",
+            "time": 5.5
+        },
+        {
+            "key": "Eb3",
+            "time": 6.5
+        },
+        {
+            "key": "Ab2",
+            "time": 7
+        },
+        {
+            "key": "Db3",
+            "time": 7.5
+        },
+        //ห้อง 3
+        {
+            "key": "Gb2,Bb2,Db3",
+            "time": 8
+        },
+        {
+            "key": "Eb3",
+            "time": 8.5
+        },
+        {
+            "key": "Ab2",
+            "time": 9
+        },
+        {
+            "key": "Db3",
+            "time": 9.5
+        },
+        {
+            "key": "F3",
+            "time": 10.5
+        },
+        {
+            "key": "Ab2",
+            "time": 11
+        },
+        {
+            "key": "C3",
+            "time": 11.5
+        },
+        //ห้อง 4
+        {
+            "key": "Ab2",
+            "time": 12
+        },
+        {
+            "key": "Eb3",
+            "time": 12.5
+        },
+        {
+            "key": "Ab2",
+            "time": 13
+        },
+        {
+            "key": "F3",
+            "time": 13.5
+        },
+        {
+            "key": "Eb3",
+            "time": 14.5
+        },
+        {
+            "key": "Ab2",
+            "time": 15
+        },
+        {
+            "key": "Db3",
+            "time": 15.5
+        },
+        //ห้อง 5
+        {
+        //left
+            "key": "Db2",
+            "time": 16
+        },
+        {
+            "key": "Db2",
+            "time": 17.5
+        },
+        {
+            "key": "Db2",
+            "time": 19.5
+        },
+        //right
+        {
+            "key": "Ab3",
+            "time": 17
+        },
+        {
+            "key": "Ab3",
+            "time": 18
+        },
+        {
+            "key": "Ab3",
+            "time": 18.5
+        },
+        {
+            "key": "Ab3",
+            "time": 19.5
+        },
+        //ห้อง 6
+        {
+        //left
+            "key": "F2",
+            "time": 20
+        },
+        {
+            "key": "F2",
+            "time": 21.5
+        },
+        {
+            "key": "F2",
+            "time": 23.5
+        },
+        //right
+        {
+            "key": "Gb3",
+            "time": 21
+        },
+        {
+            "key": "F3",
+            "time": 21.5
+        },
+        {
+            "key": "Gb3",
+            "time": 23
+        },
+        {
+            "key": "F3",
+            "time": 23.5
+        },
+        //ห้อง 7
+        {
+        //left
+            "key": "Gb2",
+            "time": 24
+        },
+        {
+            "key": "Gb2",
+            "time": 25.5
+        },
+        {
+            "key": "Gb2",
+            "time": 27.5
+        },
+        //right
+        {
+            "key": "Db3",
+            "time": 27.5
+        },
+        //ห้อง 8
+        {
+        //left
+            "key": "Ab2",
+            "time": 28
+        },
+        {
+            "key": "Ab2",
+            "time": 29.5
+        },
+        {
+            "key": "Ab2",
+            "time": 31.5
+        },
+        //right
+        {
+            "key": "Gb3",
+            "time": 28
+        },
+        {
+            "key": "F3",
+            "time": 29
+        },
+        {
+            "key": "Db3",
+            "time": 29.5
+        },
+        {
+            "key": "Eb3",
+            "time": 30.5
+        },
+        //ห้อง 9
+        {
+        //left
+            "key": "Bb2",
+            "time": 32
+        },
+        {
+            "key": "Db2",
+            "time": 33.5
+        },
+        {
+            "key": "Db2",
+            "time": 34
+        },
+        {
+            "key": "Db2",
+            "time": 35.5
+        },
+        //right
+        {
+            "key": "Ab3",
+            "time": 33
+        },
+        {
+            "key": "Ab3",
+            "time": 34
+        },
+        {
+            "key": "Ab3",
+            "time": 34.5
+        },
+        {
+            "key": "Db4",
+            "time": 35.5
+        },
+        //ห้อง 10
+        {
+        //left
+            "key": "F2",
+            "time": 36
+        },
+        {
+            "key": "F2",
+            "time": 37.5
+        },
+        {
+            "key": "F2",
+            "time": 38
+        },
+        {
+            "key": "F2",
+            "time": 39.5
+        },
+        //right
+        {
+            "key": "C4",
+            "time": 37
+        },
+        {
+            "key": "Bb3",
+            "time": 37.5
+        },
+        {
+            "key": "Ab3",
+            "time": 39
+        },
+        {
+            "key": "Bb3",
+            "time": 39.5
+        },
+        //ห้อง 11
+        {
+        //left
+            "key": "Gb2",
+            "time": 40
+        },
+        {
+            "key": "Gb2",
+            "time": 41.5
+        },
+        {
+            "key": "Gb2",
+            "time": 42
+        },
+                {
+            "key": "Gb2",
+            "time": 43.5
+        },
+        //right
+        {
+            "key": "C4",
+            "time": 43
+        },
+        //ห้อง 12
+        {
+        //left
+            "key": "Ab2",
+            "time": 44
+        },
+        {
+            "key": "Ab2",
+            "time": 45.5
+        },
+        {
+            "key": "Ab2",
+            "time": 46
+        },
+                {
+            "key": "Ab2",
+            "time": 47.5
+        },
+        //right
+        {
+            "key": "C4",
+            "time": 44
+        },
+        {
+            "key": "Ab3",
+            "time": 46
+        },
+        //ห้อง 13
+        {
+        //left
+            "key": "Db2",
+            "time": 48
+        },
+        {
+            "key": "Db2",
+            "time": 49.5
+        },
+        {
+            "key": "Db2",
+            "time": 50
+        },
+        {
+            "key": "Db2",
+            "time": 51.5
+        },
+        //right
+        {
+            "key": "Ab3",
+            "time": 49
+        },
+        {
+            "key": "Ab3",
+            "time": 49.5
+        },
+        {
+            "key": "Ab3",
+            "time": 50
+        },
+        {
+            "key": "C4",
+            "time": 50.5
+        },
+        {
+            "key": "Db4",
+            "time": 51.5
+        },
+        //ห้อง 14
+        {
+        //left
+            "key": "F2",
+            "time": 52
+        },
+        {
+            "key": "F2",
+            "time": 53.5
+        },
+        {
+            "key": "F2",
+            "time": 54
+        },
+        {
+            "key": "F2",
+            "time": 55.5
+        },
+        //right
+        {
+            "key": "Ab3",
+            "time": 53
+        },
+        {
+            "key": "Ab3",
+            "time": 53.5
+        },
+        {
+            "key": "Ab3",
+            "time": 54
+        },
+        {
+            "key": "C4",
+            "time": 54.5
+        },
+        {
+            "key": "Db4",
+            "time": 55.5
+        },
+        //ห้อง 15
+        {
+        //left
+            "key": "Gb2",
+            "time": 57
+        },
+        {
+            "key": "Gb2",
+            "time": 57.5
+        },
+        {
+            "key": "Gb2",
+            "time": 59
+        },
+        {
+            "key": "Gb2",
+            "time": 59.5
+        },
+        //right
+        {
+            "key": "F3",
+            "time": 59
+        },
+        {
+            "key": "Gb3",
+            "time": 59.5
+        },
+        //ห้อง 16
+        {
+        //left
+            "key": "Ab2",
+            "time": 60
+        },
+        {
+            "key": "Ab2",
+            "time": 61.5
+        },
+        {
+            "key": "Ab2",
+            "time": 62
+        },
+        {
+            "key": "Ab2",
+            "time": 63.5
+        },
+        //right
+        {
+            "key": "Ab3",
+            "time": 60
+        },
+        {
+            "key": "Gb3",
+            "time": 61
+        },
+                {
+            "key": "F3",
+            "time": 62
+        },
+        {
+            "key": "Eb3",
+            "time": 63
+        },
+        //ห้อง 17
+        {
+        //left
+            "key": "Db2",
+            "time": 64
+        },
+        {
+            "key": "Db3",
+            "time": 65
+        },
+        {
+            "key": "Db2",
+            "time": 65.5
+        },
+        {
+            "key": "Db2",
+            "time": 66
+        },
+        {
+            "key": "Db2",
+            "time": 67.5
+        },
+        //right
+        {
+            "key": "Ab3",
+            "time": 65
+        },
+        {
+            "key": "Ab3",
+            "time": 65.5
+        },
+                {
+            "key": "Ab3",
+            "time": 66
+        },
+        {
+            "key": "C4",
+            "time": 66.5
+        },
+        {
+            "key": "Db4",
+            "time": 67.5
+        },
+        //ห้อง 18
+        {
+        //left
+            "key": "F2",
+            "time": 68
+        },
+        {
+            "key": "F3",
+            "time": 69
+        },
+        {
+            "key": "F2",
+            "time": 69.5
+        },
+        {
+            "key": "F2",
+            "time": 70
+        },
+        {
+            "key": "F2",
+            "time": 71.5
+        },
+        //right
+        {
+            "key": "Ab3",
+            "time": 69
+        },
+        {
+            "key": "Ab3",
+            "time": 69.5
+        },
+                {
+            "key": "C4,Eb4",
+            "time": 70.5
+        },
+        {
+            "key": "Db4",
+            "time": 71.5
+        },
+        //ห้อง 19
+        {
+        //left
+            "key": "Gb2",
+            "time": 72
+        },
+        {
+            "key": "Gb3",
+            "time": 73
+        },
+        {
+            "key": "Gb2",
+            "time": 73.5
+        },
+        {
+            "key": "Gb2",
+            "time": 74
+        },
+        {
+            "key": "Gb3",
+            "time": 75
+        },
+        {
+            "key": "Gb2",
+            "time": 75.5
+        },
+        //right
+        {
+            "key": "Bb3",
+            "time": 73.5
+        },
+        {
+            "key": "Ab3",
+            "time": 75.5
+        },
+        //ห้อง 20
+        {
+        //left
+            "key": "Ab2",
+            "time": 76
+        },
+        {
+            "key": "Ab2",
+            "time": 76.5
+        },
+        {
+            "key": "Ab2",
+            "time": 77
+        },
+        {
+            "key": "Ab2",
+            "time": 78
+        },
+        {
+            "key": "Eb2",
+            "time": 78.5
+        },
+        {
+            "key": "Bb2",
+            "time": 79
+        },
+        {
+            "key": "Eb2",
+            "time": 79.5
+        },
+        //right
+        {
+            "key": "Gb4",
+            "time": 76
+        },
+        {
+            "key": "F4",
+            "time": 77
+        },
+        {
+            "key": "Eb4",
+            "time": 78
+        },
+        {
+            "key": "Db4",
+            "time": 79
+        },
+        //ห้อง 21
+        {
+        //left
+            "key": "Db2",
+            "time": 80
+        },
+        {
+            "key": "Ab2",
+            "time": 80.5
+        },
+        {
+            "key": "F3",
+            "time": 81
+        },
+        {
+            "key": "Ab2",
+            "time": 81.5
+        },
+        {
+            "key": "Gb3",
+            "time": 82
+        },
+        {
+            "key": "Ab2",
+            "time": 82.5
+        },
+        {
+            "key": "F3",
+            "time": 83
+        },
+        {
+            "key": "Ab2",
+            "time": 83.5
+        },
+        //right
+        {
+            "key": "F4",
+            "time": 80
+        },
+        {
+            "key": "Gb4",
+            "time": 82.5
+        },
+        {
+            "key": "F4",
+            "time": 83
+        },
+        //ห้อง 21
+        {
+        //left
+            "key": "Db2",
+            "time": 80
+        },
+        {
+            "key": "Ab2",
+            "time": 80.5
+        },
+        {
+            "key": "F3",
+            "time": 81
+        },
+        {
+            "key": "Ab2",
+            "time": 81.5
+        },
+        {
+            "key": "Gb3",
+            "time": 82
+        },
+        {
+            "key": "Ab2",
+            "time": 82.5
+        },
+        {
+            "key": "F3",
+            "time": 83
+        },
+        {
+            "key": "Ab2",
+            "time": 83.5
+        },
+        //right
+        {
+            "key": "F4",
+            "time": 80
+        },
+        {
+            "key": "Gb4",
+            "time": 82.5
+        },
+        {
+            "key": "F4",
+            "time": 83
+        },
+        //ห้อง 22
+        {
+        //left
+            "key": "C2",
+            "time": 84
+        },
+        {
+            "key": "Ab2",
+            "time": 84.5
+        },
+        {
+            "key": "Eb2",
+            "time": 85
+        },
+        {
+            "key": "Ab2",
+            "time": 85.5
+        },
+        {
+            "key": "C2",
+            "time": 86
+        },
+        {
+            "key": "Ab2",
+            "time": 86.5
+        },
+        {
+            "key": "C2",
+            "time": 87
+        },
+        {
+            "key": "Ab2",
+            "time": 87.5
+        },
+        //right
+        {
+            "key": "Eb4",
+            "time": 84
+        },
+        {
+            "key": "Gb4",
+            "time": 86
+        },
+        {
+            "key": "F4",
+            "time": 86.5
+        },
+        {
+            "key": "Eb4",
+            "time": 87
+        },
+        {
+            "key": "Db4",
+            "time": 87.5
+        },
+        //ห้อง 23
+        {
+        //left
+            "key": "Bb2",
+            "time": 88
+        },
+        {
+            "key": "F2",
+            "time": 88.5
+        },
+        {
+            "key": "Eb3",
+            "time": 89
+        },
+        {
+            "key": "F2",
+            "time": 89.5
+        },
+        {
+            "key": "Db3",
+            "time": 90
+        },
+        {
+            "key": "F2",
+            "time": 90.5
+        },
+        {
+            "key": "Db3",
+            "time": 91
+        },
+        {
+            "key": "F2",
+            "time": 91.5
+        },
+        //right
+        {
+            "key": "Eb4",
+            "time": 88
+        },
+        {
+            "key": "Db4",
+            "time": 89.5
+        },
+        {
+            "key": "Db4",
+            "time": 90
+        },
+        //ห้อง 24
+        {
+        //left
+            "key": "Ab2",
+            "time": 92
+        },
+        {
+            "key": "Eb2",
+            "time": 92.5
+        },
+        {
+            "key": "C3",
+            "time": 93
+        },
+        {
+            "key": "Eb2",
+            "time": 93.5
+        },
+        {
+            "key": "Db3",
+            "time": 94
+        },
+        {
+            "key": "Eb2",
+            "time": 94.5
+        },
+        {
+            "key": "C3",
+            "time": 95
+        },
+        {
+            "key": "Eb2",
+            "time": 95.5
+        },
+        //right
+        {
+            "key": "Ab3",
+            "time": 93
+        },
+        {
+            "key": "Gb4",
+            "time": 93.5
+        },
+        {
+            "key": "F4",
+            "time": 94.5
+        },
+        {
+            "key": "Eb4",
+            "time": 95
+        },
+        {
+            "key": "Db4",
+            "time": 95.5
+        },
+        //ห้อง 25
+        {
+        //left
+            "key": "Gb2",
+            "time": 96
+        },
+        {
+            "key": "Db2",
+            "time": 96.5
+        },
+        {
+            "key": "Bb2",
+            "time": 97
+        },
+        {
+            "key": "Db2",
+            "time": 97.5
+        },
+        {
+            "key": "F2",
+            "time": 98
+        },
+        {
+            "key": "C2",
+            "time": 98.5
+        },
+        {
+            "key": "Ab2",
+            "time": 99
+        },
+        {
+            "key": "C2",
+            "time": 99.5
+        },
+        //right
+        {
+            "key": "Eb4",
+            "time": 96
+        },
+        {
+            "key": "F4",
+            "time": 97.5
+        },
+        {
+            "key": "Db4",
+            "time": 99
+        },
+        //ห้อง 26
+        {
+        //left
+            "key": "Eb2",
+            "time": 100
+        },
+        {
+            "key": "Bb2",
+            "time": 100.5
+        },
+        {
+            "key": "Gb2",
+            "time": 101
+        },
+        {
+            "key": "Bb2",
+            "time": 101.5
+        },
+        {
+            "key": "Gb2",
+            "time": 102
+        },
+        {
+            "key": "Bb2",
+            "time": 102.5
+        },
+        {
+            "key": "Gb2",
+            "time": 103
+        },
+        {
+            "key": "Bb2",
+            "time": 103.5
+        },
+        //right
+        {
+            "key": "Ab3",
+            "time": 102
+        },
+        {
+            "key": "Bb3",
+            "time": 102.5
+        },
+        {
+            "key": "Db4",
+            "time": 103
+        },
+        {
+            "key": "Bb3",
+            "time": 103.5
+        },
+        //ห้อง 27
+        {
+        //left
+            "key": "Db2",
+            "time": 104
+        },
+        {
+            "key": "Ab2",
+            "time": 104.5
+        },
+        {
+            "key": "Eb3",
+            "time": 105
+        },
+        {
+            "key": "Ab2",
+            "time": 105.5
+        },
+        {
+            "key": "F2",
+            "time": 106
+        },
+        {
+            "key": "Ab2",
+            "time": 106.5
+        },
+        {
+            "key": "Eb3",
+            "time": 107
+        },
+        {
+            "key": "Ab2",
+            "time": 107.5
+        },
+        //right
+        {
+            "key": "Eb4",
+            "time": 104
+        },
+        {
+            "key": "F4",
+            "time": 105
+        },
+        {
+            "key": "F4",
+            "time": 105.5
+        },
+        {
+            "key": "Ab3",
+            "time": 107.5
+        },
+        //ห้อง 28
+        {
+        //left
+            "key": "Ab2",
+            "time": 108
+        },
+        {
+            "key": "Eb2",
+            "time": 108.5
+        },
+        {
+            "key": "Ab2",
+            "time": 109
+        },
+        {
+            "key": "Ab2",
+            "time": 109.5
+        },
+        {
+            "key": "Eb2",
+            "time": 110
+        },
+        {
+            "key": "Ab2",
+            "time": 110.5
+        },
+        {
+            "key": "Ab2",
+            "time": 111
+        },
+        {
+            "key": "Ab2",
+            "time": 111.5
+        },
+        //right
+        {
+            "key": "Gb4",
+            "time": 108
+        },
+        {
+            "key": "F4",
+            "time": 109
+        },
+        {
+            "key": "Eb4",
+            "time": 110
+        },
+        {
+            "key": "Db3",
+            "time": 111
+        },
+        //ห้อง 29
+        {
+        //left
+            "key": "Db2",
+            "time": 112
+        },
+        {
+            "key": "Ab2",
+            "time": 112.5
+        },
+        {
+            "key": "F2",
+            "time": 113
+        },
+        {
+            "key": "Ab2",
+            "time": 113.5
+        },
+        {
+            "key": "Gb2",
+            "time": 114
+        },
+        {
+            "key": "Ab2",
+            "time": 114.5
+        },
+        {
+            "key": "F2",
+            "time": 115
+        },
+        {
+            "key": "Ab2",
+            "time": 115.5
+        },
+        //right
+        {
+            "key": "F4",
+            "time": 112
+        },
+        {
+            "key": "Gb4",
+            "time": 114.5
+        },
+        {
+            "key": "F4",
+            "time": 115
+        },
+        //ห้อง 30
+        {
+        //left
+            "key": "C2",
+            "time": 116
+        },
+        {
+            "key": "Ab2",
+            "time": 116.5
+        },
+        {
+            "key": "Eb2",
+            "time": 117
+        },
+        {
+            "key": "Ab2",
+            "time": 117.5
+        },
+        {
+            "key": "C2",
+            "time": 118
+        },
+        {
+            "key": "Ab2",
+            "time": 118.5
+        },
+        {
+            "key": "Eb2",
+            "time": 119
+        },
+        {
+            "key": "Ab2",
+            "time": 119.5
+        },
+        //right
+        {
+            "key": "Eb4",
+            "time": 116
+        },
+        {
+            "key": "Gb4",
+            "time": 118
+        },
+        {
+            "key": "F4",
+            "time": 118.5
+        },
+        {
+            "key": "Eb4",
+            "time": 119
+        },
+        {
+            "key": "Db4",
+            "time": 119.5
+        },
+        //ห้อง 31
+        {
+        //left
+            "key": "Bb2",
+            "time": 120
+        },
+        {
+            "key": "F2",
+            "time": 120.5
+        },
+        {
+            "key": "Eb2",
+            "time": 121
+        },
+        {
+            "key": "F2",
+            "time": 121.5
+        },
+        {
+            "key": "Db2",
+            "time": 122
+        },
+        {
+            "key": "F2",
+            "time": 122.5
+        },
+        {
+            "key": "Db2",
+            "time": 123
+        },
+        {
+            "key": "F2",
+            "time": 123.5
+        },
+        //right
+        {
+            "key": "Eb4",
+            "time": 120
+        },
+        {
+            "key": "Db4",
+            "time": 121.5
+        },
+        {
+            "key": "Db4",
+            "time": 122
+        },
+        //ห้อง 32
+        {
+        //left
+            "key": "Ab2",
+            "time": 124
+        },
+        {
+            "key": "Eb2",
+            "time": 124.5
+        },
+        {
+            "key": "C3",
+            "time": 125
+        },
+        {
+            "key": "Eb2",
+            "time": 125.5
+        },
+        {
+            "key": "Ab2",
+            "time": 126
+        },
+        {
+            "key": "Eb2",
+            "time": 126.5
+        },
+        {
+            "key": "Ab2",
+            "time": 127
+        },
+        {
+            "key": "Eb2",
+            "time": 127.5
+        },
+        //right
+        {
+            "key": "Db4,Bb4",
+            "time": 124
+        },
+        {
+            "key": "C4,Ab3",
+            "time": 125
+        },
+        {
+            "key": "Eb4,Ab3",
+            "time": 126
+        },
+        {
+            "key": "Ab3,Db4",
+            "time": 127
+        }
+    ]
+}

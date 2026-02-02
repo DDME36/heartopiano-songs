@@ -26,9 +26,6 @@ Thumbs.db
 *.log
 npm-debug.log*
 
-# Local songs (use online instead)
-songs/
-
 # Temporary files
 *.tmp
 *.temp
