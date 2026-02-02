@@ -50,12 +50,16 @@
     "appId": "com.heartopiano.app",
     "productName": "HEARTOPIANO BY PUNN",
     "win": {
-      "target": ["portable"],
+      "target": ["nsis"],
       "icon": "public/icon.ico",
       "sign": null
     },
-    "portable": {
-      "artifactName": "Heartopiano-${version}-portable.exe"
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "HEARTOPIANO BY PUNN"
     },
     "files": [
       "dist/**/*",
