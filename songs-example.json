@@ -1,0 +1,67 @@
+{
+  "songs": [
+    {
+      "id": "twinkle-star",
+      "title": "Twinkle Twinkle Little Star",
+      "artist": "Traditional",
+      "difficulty": "Easy",
+      "notes": [
+        { "key": "C4", "time": 0 },
+        { "key": "C4", "time": 500 },
+        { "key": "G4", "time": 1000 },
+        { "key": "G4", "time": 1500 },
+        { "key": "A4", "time": 2000 },
+        { "key": "A4", "time": 2500 },
+        { "key": "G4", "time": 3000 },
+        { "key": "F4", "time": 4000 },
+        { "key": "F4", "time": 4500 },
+        { "key": "E4", "time": 5000 },
+        { "key": "E4", "time": 5500 },
+        { "key": "D4", "time": 6000 },
+        { "key": "D4", "time": 6500 },
+        { "key": "C4", "time": 7000 }
+      ]
+    },
+    {
+      "id": "mary-lamb",
+      "title": "Mary Had a Little Lamb",
+      "artist": "Traditional",
+      "difficulty": "Easy",
+      "notes": [
+        { "key": "E4", "time": 0 },
+        { "key": "D4", "time": 500 },
+        { "key": "C4", "time": 1000 },
+        { "key": "D4", "time": 1500 },
+        { "key": "E4", "time": 2000 },
+        { "key": "E4", "time": 2500 },
+        { "key": "E4", "time": 3000 },
+        { "key": "D4", "time": 4000 },
+        { "key": "D4", "time": 4500 },
+        { "key": "D4", "time": 5000 },
+        { "key": "E4", "time": 6000 },
+        { "key": "G4", "time": 6500 },
+        { "key": "G4", "time": 7000 }
+      ]
+    },
+    {
+      "id": "happy-birthday",
+      "title": "Happy Birthday",
+      "artist": "Traditional",
+      "difficulty": "Medium",
+      "notes": [
+        { "key": "C4", "time": 0 },
+        { "key": "C4", "time": 300 },
+        { "key": "D4", "time": 600 },
+        { "key": "C4", "time": 1200 },
+        { "key": "F4", "time": 1800 },
+        { "key": "E4", "time": 2400 },
+        { "key": "C4", "time": 3600 },
+        { "key": "C4", "time": 3900 },
+        { "key": "D4", "time": 4200 },
+        { "key": "C4", "time": 4800 },
+        { "key": "G4", "time": 5400 },
+        { "key": "F4", "time": 6000 }
+      ]
+    }
+  ]
+}

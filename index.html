@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEARTOPIANO - ดาวน์โหลด</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            background: linear-gradient(-45deg, #FF9EAA, #FFD0D0, #D0E7D2, #B9D7EA);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            min-height: 100vh;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            overflow: hidden;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 850px;
+            width: 100%;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(20px);
+            border-radius: 28px;
+            padding: 25px 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            font-size: 34px;
+            font-weight: 900;
+            color: #1e293b;
+            margin-bottom: 4px;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            color: #ec4899;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .description {
+            font-size: 13px;
+            color: #475569;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .version {
+            display: inline-block;
+            background: rgba(236, 72, 153, 0.1);
+            color: #ec4899;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .download-section {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 18px;
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, #ec4899, #8b5cf6);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(236, 72, 153, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(236, 72, 153, 0.4);
+        }
+
+        .download-btn.disabled {
+            background: linear-gradient(135deg, #94a3b8, #64748b);
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        .download-btn.disabled:hover {
+            transform: none;
+            box-shadow: 0 8px 25px rgba(148, 163, 184, 0.3);
+        }
+
+        .platform-icon {
+            font-size: 20px;
+        }
+
+        .coming-soon {
+            font-size: 10px;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 3px 6px;
+            border-radius: 6px;
+            margin-left: 6px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .feature-icon {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        .feature-title {
+            font-size: 12px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 2px;
+        }
+
+        .feature-desc {
+            font-size: 10px;
+            color: #64748b;
+        }
+
+        .footer {
+            margin-top: 18px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .footer-credit {
+            font-size: 13px;
+            font-weight: 600;
+            color: #475569;
+            margin-bottom: 6px;
+        }
+
+        .footer-credit .name {
+            color: #ec4899;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .footer-info {
+            font-size: 10px;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .download-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="logo">🎹</div>
+            <h1>HEARTOPIANO</h1>
+            <div class="subtitle">BY PUNN</div>
+            <p class="description">
+                เครื่องเล่นเปียโนอัตโนมัติสำหรับเกม Heartopia<br>
+                Auto Piano Player for Heartopia Game
+            </p>
+            <div class="version">📦 Version 1.0.0</div>
+
+            <div class="download-section">
+                <a href="https://github.com/DDME36/heartopiano-songs/releases/latest/download/Heartopiano-Setup-1.0.0.exe" 
+                   class="download-btn">
+                    <span class="platform-icon">🪟</span>
+                    <span>ดาวน์โหลดสำหรับ Windows</span>
+                </a>
+                
+                <button class="download-btn disabled" disabled>
+                    <span class="platform-icon">🍎</span>
+                    <span>
+                        macOS
+                        <span class="coming-soon">Coming Soon</span>
+                    </span>
+                </button>
+                
+                <button class="download-btn disabled" disabled>
+                    <span class="platform-icon">🐧</span>
+                    <span>
+                        Linux
+                        <span class="coming-soon">Coming Soon</span>
+                    </span>
+                </button>
+            </div>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🎵</div>
+                    <div class="feature-title">ห้องสมุดเพลง</div>
+                    <div class="feature-desc">อัพเดทอัตโนมัติ</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <div class="feature-title">ปรับความเร็ว</div>
+                    <div class="feature-desc">0.5x - 2.0x</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎨</div>
+                    <div class="feature-title">UI สวยงาม</div>
+                    <div class="feature-desc">ดีไซน์มินิมอล</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🌐</div>
+                    <div class="feature-title">หลายภาษา</div>
+                    <div class="feature-desc">ไทย/อังกฤษ</div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-credit">
+                    Created by <span class="name">PUNN</span> with ❤️
+                </div>
+                <div class="footer-info">
+                    © 2026 PUNN • Free to Use
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

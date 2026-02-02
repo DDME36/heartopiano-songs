@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Varela+Round&family=Outfit:wght@100..900&family=Inter:wght@300;400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-pink: #ff85b3;
+  --secondary-purple: #c27dff;
+  --accent-blue: #7dbbff;
+  --glass-bg: rgba(255, 255, 255, 0.25);
+  --glass-border: rgba(255, 255, 255, 0.4);
+}
+
+@layer base {
+  body {
+    @apply h-screen overflow-hidden text-slate-800 antialiased selection:bg-pink-200/50;
+    font-family: 'Inter', 'IBM Plex Sans Thai', 'DM Sans', 'Varela Round', 'Mitr', system-ui, -apple-system, sans-serif;
+    background: transparent !important;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply backdrop-blur-2xl bg-white/20 border border-white/40 shadow-[0_8px_32_0_#ffb6c14d];
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .glass-card {
+    @apply backdrop-blur-xl bg-white/30 border border-white/50 shadow-lg rounded-3xl overflow-hidden;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .mini-glass {
+    @apply backdrop-blur-2xl bg-white/40 border border-white/60;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+  }
+
+  .vibrant-bg {
+    background: linear-gradient(-45deg, #FF9EAA, #FFD0D0, #D0E7D2, #B9D7EA);
+    background-size: 400% 400%;
+    animation: gradient-flow 15s ease infinite;
+  }
+
+  .premium-blur {
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+  }
+
+  .glow-pink {
+    box-shadow: 0 0 25px rgba(255, 133, 179, 0.3);
+  }
+
+  .draggable-region {
+    -webkit-app-region: drag;
+    cursor: default;
+  }
+
+  .no-drag {
+    -webkit-app-region: no-drag;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-pink-300/40 rounded-full hover:bg-pink-400/60 transition-colors;
+  }
+
+  /* Slider Styling */
+  .slider {
+    @apply h-2 bg-white/30 rounded-full appearance-none outline-none;
+  }
+
+  .slider::-webkit-slider-thumb {
+    @apply w-5 h-5 bg-white border-2 border-pink-400 rounded-full cursor-pointer appearance-none shadow-md transition-all;
+    @apply hover:scale-125 hover:shadow-pink-200/50 hover:shadow-xl;
+  }
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hover-lift {
+  @apply transition-transform duration-300 hover:-translate-y-1 hover:scale-[1.01];
+}
+
+.btn-premium {
+  @apply px-4 py-2 rounded-2xl bg-white/40 border border-white/60 backdrop-blur-md;
+  @apply hover:bg-white/60 hover:shadow-lg active:scale-95 transition-all duration-300;
+  @apply text-slate-800 font-semibold;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-600 font-bold;
+}
