@@ -18,6 +18,11 @@
     font-family: 'Inter', 'IBM Plex Sans Thai', 'DM Sans', 'Varela Round', 'Mitr', system-ui, -apple-system, sans-serif;
     background: transparent !important;
   }
+
+  #root {
+    @apply h-full w-full overflow-hidden;
+    border-radius: 24px;
+  }
 }
 
 @layer components {
