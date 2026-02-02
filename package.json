@@ -59,7 +59,8 @@
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "HEARTOPIANO BY PUNN"
+      "shortcutName": "HEARTOPIANO BY PUNN",
+      "artifactName": "HEARTOPIANO-BY-PUNN-Setup.exe"
     },
     "files": [
       "dist/**/*",

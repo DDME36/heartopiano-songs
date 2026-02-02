@@ -66,12 +66,12 @@ if errorlevel 1 (
 
 echo.
 echo [Step 3/5] Checking output...
-if exist "dist\Heartopiano-1.0.0-portable.exe" (
+if exist "dist\HEARTOPIANO-BY-PUNN-Setup.exe" (
     echo ✓ Build successful!
     echo.
-    echo File: dist\Heartopiano-1.0.0-portable.exe
+    echo File: dist\HEARTOPIANO-BY-PUNN-Setup.exe
     echo Size: 
-    powershell -Command "(Get-Item 'dist\Heartopiano-1.0.0-portable.exe').Length / 1MB | ForEach-Object { '{0:N2} MB' -f $_ }"
+    powershell -Command "(Get-Item 'dist\HEARTOPIANO-BY-PUNN-Setup.exe').Length / 1MB | ForEach-Object { '{0:N2} MB' -f $_ }"
 ) else (
     echo ✗ Build file not found!
     pause
@@ -95,7 +95,7 @@ echo.
 echo Next steps:
 echo 1. Go to: https://github.com/DDME36/heartopiano-songs/releases/new
 echo 2. Tag: v1.0.0
-echo 3. Upload: dist\Heartopiano-1.0.0-portable.exe
+echo 3. Upload: dist\HEARTOPIANO-BY-PUNN-Setup.exe
 echo 4. Publish release
 echo.
 echo 5. Enable GitHub Pages:
