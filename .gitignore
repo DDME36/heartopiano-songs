@@ -5,6 +5,9 @@ node_modules/
 dist/
 dist-electron/
 
+# Download page (for GitHub Pages)
+index.html
+
 # Python embedded (too large for git)
 python-embed/
 

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEARTOPIANO - Auto Piano Player</title>
+    <!-- Import Font: Outfit (Modern & Geometric) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #ec4899; /* Pink */
+            --secondary: #8b5cf6; /* Purple */
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --glass: rgba(255, 255, 255, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #f0f2f5;
+            height: 100vh; /* Force full viewport height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0; /* Remove padding to maximize space */
+            overflow: hidden; /* Hide scrollbars if content fits */
+            position: relative;
+        }
+
+        /* --- BACKGROUND ANIMATION (Abstract Blobs) --- */
+        .bg-shape {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: -1;
+            animation: float 20s infinite alternate;
+        }
+
+        .shape-1 {
+            width: 400px;
+            height: 400px;
+            background: #ff9eaa;
+            top: -100px;
+            left: -100px;
+        }
+
+        .shape-2 {
+            width: 500px;
+            height: 500px;
+            background: #b9d7ea;
+            bottom: -100px;
+            right: -100px;
+            animation-delay: -5s;
+        }
+
+        .shape-3 {
+            width: 300px;
+            height: 300px;
+            background: #d0e7d2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: pulse 15s infinite alternate;
+        }
+
+        @keyframes float {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(50px, 50px) rotate(20deg); }
+        }
+
+        @keyframes pulse {
+            0% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+            100% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.8; }
+        }
+
+        /* --- MAIN CARD --- */
+        .container {
+            width: 100%;
+            max-width: 550px; /* Slightly narrower for compactness */
+            position: relative;
+        }
+
+        .card {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 30px; /* Slightly smaller radius */
+            padding: 35px 40px; /* Reduced padding significantly */
+            box-shadow: 
+                0 20px 50px rgba(0, 0, 0, 0.05),
+                0 1px 0 rgba(255, 255, 255, 0.5) inset;
+            border: 1px solid var(--glass-border);
+            text-align: center;
+            transition: transform 0.3s ease;
+            max-height: 95vh; /* Ensure it never exceeds viewport */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* --- HEADER & VISUALIZER --- */
+        .header-visual {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            margin-bottom: 15px; /* Reduced */
+            height: 30px; /* Reduced */
+        }
+
+        .bar {
+            width: 6px; /* Thinner */
+            background: linear-gradient(to top, var(--primary), var(--secondary));
+            border-radius: 10px;
+            animation: equalizer 1s ease-in-out infinite;
+        }
+
+        .bar:nth-child(1) { height: 15px; animation-delay: 0.1s; }
+        .bar:nth-child(2) { height: 25px; animation-delay: 0.2s; }
+        .bar:nth-child(3) { height: 35px; animation-delay: 0.0s; }
+        .bar:nth-child(4) { height: 20px; animation-delay: 0.3s; }
+        .bar:nth-child(5) { height: 10px; animation-delay: 0.1s; }
+
+        @keyframes equalizer {
+            0%, 100% { transform: scaleY(1); opacity: 0.8; }
+            50% { transform: scaleY(0.5); opacity: 0.4; }
+        }
+
+        h1 {
+            font-size: 2.5rem; /* Reduced size */
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--dark) 0%, #475569 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -1px;
+            margin-bottom: 5px;
+            line-height: 1.1;
+        }
+
+        .subtitle {
+            font-size: 0.8rem;
+            color: #64748b;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 20px; /* Reduced */
+        }
+
+        .description {
+            font-size: 1rem;
+            color: #475569;
+            line-height: 1.5;
+            margin-bottom: 25px; /* Reduced */
+            font-weight: 400;
+        }
+
+        /* --- DOWNLOAD BUTTON (The Star) --- */
+        .btn-wrapper {
+            position: relative;
+            z-index: 10;
+            margin-bottom: 30px; /* Reduced */
+            display: inline-block;
+        }
+
+        .download-btn {
+            background: #1e293b;
+            color: white;
+            padding: 15px 35px; /* Compact padding */
+            border-radius: 100px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center;
+            gap: 12px;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 10px 30px -10px rgba(30, 41, 59, 0.5);
+        }
+
+        /* Shine effect */
+        .download-btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.2), transparent);
+            transform: skewX(-20deg);
+            transition: 0.5s;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -10px rgba(236, 72, 153, 0.4);
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+
+        .download-btn:hover::after {
+            left: 150%;
+        }
+
+        .btn-icon svg {
+            width: 20px;
+            height: 20px;
+            stroke-width: 2.5;
+        }
+
+        .os-info {
+            display: block;
+            text-align: center; /* Changed to CENTER */
+        }
+        
+        .os-label {
+            font-size: 0.7rem;
+            opacity: 0.7;
+            font-weight: 400;
+            display: block;
+            margin-bottom: -2px;
+        }
+
+        /* --- FEATURES GRID (Clean Icons) --- */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px; /* Tighter gap */
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center; /* Centered vertically */
+            gap: 12px;
+            padding: 10px 12px; /* Smaller padding */
+            border-radius: 16px;
+            transition: background 0.3s;
+        }
+
+        .feature-item:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .icon-box {
+            background: white;
+            width: 36px; /* Smaller icons */
+            height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            flex-shrink: 0;
+            color: var(--primary);
+        }
+
+        .icon-box svg {
+            width: 18px;
+            height: 18px;
+            stroke-width: 2;
+        }
+
+        .feat-text h3 {
+            font-size: 0.85rem;
+            color: var(--dark);
+            margin-bottom: 1px;
+        }
+
+        .feat-text p {
+            font-size: 0.75rem;
+            color: #64748b;
+            line-height: 1.2;
+        }
+
+        /* --- FOOTER --- */
+        .footer {
+            margin-top: 25px; /* Reduced */
+            padding-top: 20px; /* Reduced */
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            font-size: 0.8rem;
+            color: #94a3b8;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer a {
+            color: #64748b;
+            text-decoration: none;
+            margin-left: 15px;
+            transition: color 0.2s;
+            font-weight: 500;
+            font-size: 0.8rem;
+        }
+
+        .footer a:hover {
+            color: var(--primary);
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            .card { padding: 30px 20px; width: 90%; }
+            h1 { font-size: 2rem; }
+            .features { grid-template-columns: 1fr; gap: 10px; }
+            .footer { flex-direction: column; gap: 10px; text-align: center; }
+            .footer a { margin: 0 10px; }
+            body { height: auto; padding: 20px; overflow-y: auto; } /* Allow scroll on very small screens */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Moving Background Shapes -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <div class="container">
+        <div class="card">
+            
+            <!-- Music Visualizer Animation -->
+            <div class="header-visual">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <h1>HEARTOPIANO</h1>
+            <div class="subtitle">AUTOMATION FOR HEARTOPIA</div>
+            
+            <p class="description">
+                ยกระดับประสบการณ์ดนตรีในเกมของคุณ <br>
+                ด้วยระบบเล่นอัตโนมัติที่แม่นยำและลื่นไหล
+            </p>
+
+            <!-- Main CTA Button -->
+            <div class="btn-wrapper">
+                <a href="https://github.com/DDME36/heartopiano-songs/releases/download/v1.0.0/HEARTOPIANO-BY-PUNN-Setup.exe" class="download-btn">
+                    <div class="btn-icon">
+                        <!-- Windows Icon SVG -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 20L4 20"/>
+                            <path d="M20 4L4 4"/>
+                            <path d="M20 12L4 12"/>
+                            <path d="M12 4L12 20"/>
+                        </svg>
+                    </div>
+                    <div class="os-info">
+                        <span class="os-label">Download for</span>
+                        Windows (64-bit)
+                    </div>
+                </a>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="features">
+                <div class="feature-item">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                    </div>
+                    <div class="feat-text">
+                        <h3>Smart Library</h3>
+                        <p>ซิงค์เพลงอัตโนมัติ</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                    </div>
+                    <div class="feat-text">
+                        <h3>Speed Control</h3>
+                        <p>ปรับความเร็ว 0.5x - 2.0x</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div class="feat-text">
+                        <h3>Safe & Secure</h3>
+                        <p>Open Source 100%</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <div class="feat-text">
+                        <h3>Dual Language</h3>
+                        <p>รองรับไทย & English</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UPDATED FOOTER -->
+            <div class="footer">
+                <div>© 2026 <strong>Created by PUNN</strong> with ❤️</div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
