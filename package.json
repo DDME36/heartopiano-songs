@@ -48,9 +48,10 @@
   },
   "build": {
     "appId": "com.heartopiano.app",
-    "productName": "Heartopiano",
+    "productName": "HEARTOPIANO BY PUNN",
     "win": {
       "target": ["portable"],
+      "icon": "public/icon.ico",
       "sign": null
     },
     "portable": {
