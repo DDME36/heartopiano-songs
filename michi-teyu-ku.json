@@ -1,0 +1,211 @@
+{
+  "id": "michi-teyu-ku",
+  "title": "Michi Teyu Ku",
+  "artist": "Fujii Kaze",
+  "bpm": 80,
+  "difficulty": "Hard",
+  "duration": 23.2,
+  "notes": [
+    {
+      "key": "A2,A2,A3,C#3,E3",
+      "time": 0.0
+    },
+    {
+      "key": "B2,C#2,E3,G#3",
+      "time": 2.0
+    },
+    {
+      "key": "A3,F#3",
+      "time": 2.5
+    },
+    {
+      "key": "B3,G#3",
+      "time": 3.0
+    },
+    {
+      "key": "A3,F#3",
+      "time": 3.5
+    },
+    {
+      "key": "A2,C#3,D2",
+      "time": 4.0
+    },
+    {
+      "key": "B2,E2,E3,F#2,G#3",
+      "time": 6.0
+    },
+    {
+      "key": "A3,F#3",
+      "time": 6.5
+    },
+    {
+      "key": "B3,G#3",
+      "time": 7.0
+    },
+    {
+      "key": "A3,C#4",
+      "time": 7.5
+    },
+    {
+      "key": "A2,B2",
+      "time": 8.0
+    },
+    {
+      "key": "A3,F#3",
+      "time": 8.5
+    },
+    {
+      "key": "D3,F#3",
+      "time": 9.5
+    },
+    {
+      "key": "E2,E2",
+      "time": 10.0
+    },
+    {
+      "key": "C#3,E3",
+      "time": 10.5
+    },
+    {
+      "key": "B2,D3",
+      "time": 11.0
+    },
+    {
+      "key": "C#3,E3",
+      "time": 11.5
+    },
+    {
+      "key": "A2,A2",
+      "time": 12.0
+    },
+    {
+      "key": "A#2,A#2,C3,D3,F3",
+      "time": 13.5
+    },
+    {
+      "key": "E3,G3",
+      "time": 14.5
+    },
+    {
+      "key": "D3,F3",
+      "time": 15.0
+    },
+    {
+      "key": "A2,A4,E4",
+      "time": 16.0
+    },
+    {
+      "key": "E3",
+      "time": 16.5
+    },
+    {
+      "key": "C#4",
+      "time": 17.0
+    },
+    {
+      "key": "A3",
+      "time": 17.5
+    },
+    {
+      "key": "B3,C#3,E4,G#4",
+      "time": 18.0
+    },
+    {
+      "key": "A4,F#4,F3",
+      "time": 18.5
+    },
+    {
+      "key": "B3,B4,G#4",
+      "time": 19.0
+    },
+    {
+      "key": "A4,F#4,G#3",
+      "time": 19.5
+    },
+    {
+      "key": "D3",
+      "time": 20.0
+    },
+    {
+      "key": "F#3",
+      "time": 20.5
+    },
+    {
+      "key": "C#4",
+      "time": 21.0
+    },
+    {
+      "key": "A3",
+      "time": 21.5
+    },
+    {
+      "key": "B3,E4,F#2,G#4",
+      "time": 22.0
+    },
+    {
+      "key": "A4,C#3,F#4",
+      "time": 22.5
+    },
+    {
+      "key": "A3,B4,G#4",
+      "time": 23.0
+    },
+    {
+      "key": "A4,C#4,E3",
+      "time": 23.5
+    },
+    {
+      "key": "A3,B2",
+      "time": 24.0
+    },
+    {
+      "key": "A4,D3,F#4",
+      "time": 24.5
+    },
+    {
+      "key": "F#3",
+      "time": 25.0
+    },
+    {
+      "key": "D4,E2,F#4",
+      "time": 25.5
+    },
+    {
+      "key": "C#4,E4",
+      "time": 26.5
+    },
+    {
+      "key": "B3,D4",
+      "time": 27.0
+    },
+    {
+      "key": "C#4,E4",
+      "time": 27.5
+    },
+    {
+      "key": "A2",
+      "time": 28.0
+    },
+    {
+      "key": "C#3",
+      "time": 28.5
+    },
+    {
+      "key": "E3",
+      "time": 29.0
+    },
+    {
+      "key": "A#2,C3,D3,F3",
+      "time": 29.5
+    },
+    {
+      "key": "A#3,C4,D4,F4",
+      "time": 30.5
+    },
+    {
+      "key": "A#4,C5,D4,F4",
+      "time": 31.0
+    }
+  ],
+  "genre": "international"
+}
